@@ -41,9 +41,11 @@ abstract participant member identified by memberId{
 }
 participant Faculty extends member {
   o assetStatus status
+  o String Department
 
 }
 participant Officer extends member {
+  o String Department
   }
 participant Store identified by storeId {
   o String storeId
